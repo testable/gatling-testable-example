@@ -6,7 +6,7 @@ import scala.concurrent.duration._
 class DemoSimulation extends Simulation {
 
   val httpConf = http
-    .baseURL("http://sample.testable.io") // Here is the root for all relative URLs
+    .baseUrl("http://sample.testable.io") // Here is the root for all relative URLs
     .userAgentHeader("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0")
 
   val scn = scenario("Testable Demo") // A scenario is a chain of requests and pauses
